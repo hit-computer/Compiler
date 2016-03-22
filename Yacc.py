@@ -172,36 +172,6 @@ def dealT():
 		
 loadGram()
 
-"""
-it = Gram[9]
-#print Gram[9]
-one = it.split('->')[0] + '->. '+it.split('->')[1]+' , '+'-1'
-t = []
-t.append(one)
-#print t
-print closure(t)
-
-print len(Gram)
-for it in Gram:
-	print it
-#print symbol
-#print Var
-
-CreatLR()
-CreatTable()
-print len(Action)
-print 'GOTO: '
-print len(Goto)
-
-
-for it in Gram:
-	one = it.split('->')[0] + '->. '+it.split('->')[1]+' , '+'#'
-	t = []
-	t.append(one)
-	print closure(t)
-"""
-
-
 CreatLR()
 CreatTable()
 afp = open('Action.txt','w')
