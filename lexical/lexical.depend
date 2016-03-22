@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1399384987 source:d:\快盘\programme\code blocks\homework\lexical\main.cpp
+	"lexical.h"
+
+1399369884 d:\快盘\programme\code blocks\homework\lexical\lexical.h
+	<fstream>
+	<iostream>
+	<string.h>
+	<cctype>
+	<math.h>
+
+1399463195 source:d:\快盘\programme\code blocks\homework\lexical\gram.cpp
+	"lexical.h"
+
+1399369941 source:d:\快盘\programme\code blocks\homework\lexical\lexical.cpp
+	"lexical.h"
+

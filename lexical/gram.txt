@@ -1,0 +1,102 @@
+$-><S>
+<S>-><R> main ( ) { <B> <RET> }
+<RET>->return <FH> ;
+<RET>->return
+<FH>->dig
+<R>->int
+<R>->void
+<B>-><BS> <B>
+<B>-><BS>
+<BS>-><D>
+<BS>-><F>
+<BS>-><X>
+<BS>-><W>
+<BS>-><Y>
+<BS>-><Z> ;
+<Z>->var <A> ++
+<Z>->var ++
+<Z>->var <A> --
+<Z>->var --
+<D>->int var <A> <DF> <DS> ;
+<D>->int var <A> <DF> ;
+<D>->int var <DF> <DS> ;
+<D>->int var <DF> ;
+<D>->int var <A> <DS> ;
+<D>->int var <A> ;
+<D>->int var <DS> ;
+<D>->int var ;
+<F>->var <A> <DF> ;
+<F>->var <DF> ;
+<A>->[ var ]
+<A>->[ dig ]
+<A>->[ <M> ]
+<DF>->= <M>
+<DF>->= { <NS> }
+<NS>->dig
+<NS>->dig <CN>
+<CN>->, dig <CN>
+<CN>->, dig
+<DS>->, var <A> <DF> <DS>
+<DS>->, var <DF> <DS>
+<DS>->, var <A> <DS>
+<DS>->, var <DS>
+<DS>->, var <A> <DF>
+<DS>->, var <DF>
+<DS>->, var <A>
+<DS>->, var
+<M>-><MC> <MS> <MF>
+<M>-><MC> <MS>
+<M>-><MC> <MF>
+<M>-><MC>
+<MF>->+ <M>
+<MF>->- <M>
+<MS>->* <MC> <MS>
+<MS>->/ <MC> <MS>
+<MS>->* <MC>
+<MS>->/ <MC>
+<MC>->( <M> )
+<MC>->dig
+<MC>->str
+<MC>->var <A>
+<MC>->var
+<X>-><FORX>
+<X>-><WHILEX>
+<FORX>->for ( <FOD> <FOT> <FOF> ) { <B> }
+<FORX>->for ( <FOD> <FOT> ) { <B> }
+<FOD>->;
+<FOD>-><F>
+<FOT>-><T> ;
+<FOT>->;
+<FOF>->var <A> = <M>
+<FOF>->var = <M>
+<FOF>-><Z>
+<T>->( <M> <GK> <M> <TS> )
+<T>->( <M> <GK> <M> )
+<T>-><M> <GK> <M>
+<TS>->&& <T>
+<TS>->|| <T>
+<GK>->!=
+<GK>->==
+<GK>->>=
+<GK>-><=
+<GK>->>
+<GK>-><
+<WHILEX>->while <T> { <B> }
+<W>-><IF> <IF_E>
+<W>-><IF>
+<IF>->if <T> { <B> }
+<IF_E>-><ELSE>
+<ELSE>->else <ELSE_E>
+<ELSE_E>-><IF> <IF_E>
+<ELSE_E>-><IF>
+<ELSE_E>->{ <B> }
+<Y>->print ( str , <PRLI> ) ;
+<Y>->print ( str ) ;
+<Y>->scanf ( str , <SCLI> ) ;
+<SCLI>-><SCA>
+<SCLI>-><SCLI> , <SCA>
+<SCA>->& <MC>
+<SCA>-><MC>
+<PRLI>-><PRA>
+<PRLI>-><PRLI> , <PRA>
+<PRA>-><M>
