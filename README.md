@@ -7,7 +7,7 @@
 
 ==============
 ###语法分析器
-语法分析器的任务主要是对输入的文法产生式（在gram.txt文本文件中）进行处理，产生Action表（Action.txt）和Goto表（Goto.txt）。语法分析器由python语言实现，程序文件为Yacc.py
+语法分析器的任务主要是对输入的文法产生式（在gram.txt文本文件中，gram.txt文件中的数字表示终结符，这些终结符应该对应词法分析器中每个token的id号）进行处理，产生Action表（Action.txt）和Goto表（Goto.txt）。语法分析器由python语言实现，程序文件为Yacc.py
 
 ==============
 ###语义子程序和汇编代码生成
