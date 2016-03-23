@@ -7,7 +7,7 @@
 
 ==============
 ###语法分析器
-语法分析器的任务主要是对输入的文法产生式（产生式在gram.txt文本文件中。gram.txt文件中的数字表示终结符，这些终结符应该对应词法分析器中每个token的id号）进行处理，产生Action表（Action.txt）和Goto表（Goto.txt）。语法分析器由python语言实现，程序文件为Yacc.py
+语法分析器的任务主要是对输入的文法产生式（产生式在gram.txt文本文件中。gram.txt文件中的数字表示终结符，这些终结符应该对应词法分析器中每个token的id号）进行处理，产生Action表（Action.txt）和Goto表（Goto.txt）。语法分析器由python语言实现，程序文件为Syntactic.py
 
 ==============
 ###语义子程序和汇编代码生成
@@ -15,4 +15,4 @@
 
 ==============
 ###主程序
-主程序为Main文件夹下的main.cpp文件。运行main之前需要先运行Yacc.py，处理gram.txt文本文件里的文法产生式，将Yacc.py生成的Action.txt，Goto.txt以及newg.txt拷贝到Main目录下。运行主程序，编译器的输入为test.c文件（C语言文件），编译器会输出一个文件temp.txt，该文件为编译生成的汇编代码。
+主程序为Main文件夹下的main.cpp文件。运行main之前需要先运行Syntactic.py，处理gram.txt文本文件里的文法产生式，将Syntactic.py生成的Action.txt，Goto.txt以及newg.txt拷贝到Main目录下。运行主程序，编译器的输入为test.c文件（C语言文件），编译器会输出一个文件temp.txt，该文件为编译生成的汇编代码。
